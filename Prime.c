@@ -8,22 +8,11 @@ void main(){
     scanf("%d",&num);
     printf("Prime numbers are:\n");
     //traversing all numbers from 2 to entered integer num
-    for(i=2; i<num; i++)
+    for(i=2; i<=num; i++)
     {
-        //loop to check divisibility
-        for(j=2; j<i; j++)
+        if((num==2)||(num==3)||((num+1)%6==0)||((num-1)%6==0))
         {
-            //checking if it is divisible by any smaller number
-            check=sqrt(i);
-            if(check%j == 0)
-            {
-                //if it is divisible exiting from loop
-                break;
-            }
-        }
-        //printing the number if it is never divisible by numbers smaller than itself
-        if(i == j){
-            printf("%d\n", i);
+            printf("%d",num);
         }
     }
 }
