@@ -31,9 +31,7 @@ int binarySearch(int array[], int number, int start, int end) {
 
 	int tmp = (int) end / 2;
     /* divide array length in half */
-    /* if number is greater than element in half, do search by start to tmp
-	 * else search by tmp to end
-     */
+
 	if(number == array[tmp]) {
 		return 0;
 	} else if(number > array[tmp]) {
