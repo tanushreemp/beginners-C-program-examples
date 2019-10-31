@@ -15,5 +15,6 @@ int main()
 		j++;
 		a=a/10;
 	}
-	cout<<b;
+	cout<<b;//print decimal value 
+	
 }
